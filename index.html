@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Product App</title>
+  </head>
+  <body>
+    <div class="nav-bar"></div>
+    <div id="app">
+      <div class="cart">
+        <p>Cart ({{ cardSize }})</p>
+      </div>
+      <product :premium="premium" @add-to-card="updateCart" @remove-from-card="reduceFromCart"></product>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
